@@ -7,45 +7,35 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; color: #334155; line-height: 1.8; }
-        .content-card { background: #ffffff; border: 1px solid #f1f5f9; }
+        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; color: #334155; line-height: 1.8; }
+        h1, h2 { color: #1e293b; font-weight: 700; margin-top: 1.5rem; }
     </style>
 </head>
-<body class="bg-slate-50 p-6 md:p-16 lg:p-24">
-    <div class="max-w-4xl mx-auto content-card p-8 md:p-12 rounded-[2rem] shadow-sm">
-        <a href="index.html" class="text-blue-600 font-semibold flex items-center gap-2 hover:translate-x-[-4px] transition-transform mb-8">
-            ← Back to Hub
-        </a>
+<body class="p-8 lg:p-24">
+    <div class="max-w-4xl mx-auto bg-white p-12 rounded-[2.5rem] shadow-sm border border-slate-100">
+        <a href="index.html" class="text-blue-600 font-semibold hover:underline mb-8 block">← Back to Dashboard</a>
         
-        <h1 class="text-4xl font-bold text-slate-900 mb-4">Privacy Policy</h1>
-        <p class="text-slate-400 mb-10">Last Updated: May 11, 2026</p>
+        <h1 class="text-4xl mb-4">Privacy Policy</h1>
+        <p class="text-slate-400 mb-10 italic">Last Updated: May 11, 2026</p>
 
-        <article class="space-y-8 text-slate-600">
-            <section>
-                <h2 class="text-xl font-bold text-slate-800 mb-3">1. Information Collection</h2>
-                <p>Nexus Workspace collects minimal data necessary to provide a collaborative environment. This includes your account email, profile name, and user-generated content (notes, tasks, and shared project data).</p>
-            </section>
+        <section class="space-y-6 text-slate-700">
+            <h2 class="text-2xl">Introduction</h2>
+            <p>Welcome to Nexus Workspace. We respect your privacy and are committed to protecting your professional data...</p>
 
-            <section>
-                <h2 class="text-xl font-bold text-slate-800 mb-3">2. Third-Party Services</h2>
-                <p>Our infrastructure utilizes standard industry providers for hosting and analytics:</p>
-                <ul class="list-disc pl-6 space-y-2 mt-2">
-                    <li>Google Play Services (App Distribution)</li>
-                    <li>Vercel (Web Infrastructure)</li>
-                    <li>Firebase (Authentication & Real-time Sync)</li>
-                </ul>
-            </section>
+            <h2 class="text-2xl">Information Collection</h2>
+            <p>We collect minimal information required to provide our workspace service, including your email address and any user-generated content (like notes, tasks, or messages) you create within the app.</p>
 
-            <section>
-                <h2 class="text-xl font-bold text-slate-800 mb-3">3. Data Security</h2>
-                <p>All data is encrypted in transit using industry-standard SSL/TLS protocols. We prioritize the integrity of your professional workspace data.</p>
-            </section>
+            <h2 class="text-2xl">Third-Party Services</h2>
+            <p>The app does utilize industry-standard services that may collect information:</p>
+            <ul class="list-disc pl-6 space-y-1">
+                <li>Google Play Services</li>
+                <li>Firebase Analytics</li>
+                <li>Vercel (Hosting)</li>
+            </ul>
 
-            <section class="p-6 bg-slate-50 rounded-2xl border border-slate-100 mt-12">
-                <h2 class="text-xl font-bold text-slate-800 mb-2">Contact Legal</h2>
-                <p>For privacy inquiries, contact: <strong>kiitnexus.in@gmail.com</strong></p>
-            </section>
-        </article>
+            <h2 class="text-2xl">Contact Legal</h2>
+            <p>If you have any questions, do not hesitate to contact us at <strong>kiitnexus.in@gmail.com</strong>.</p>
+        </section>
     </div>
 </body>
 </html>
