@@ -3,63 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delete Account | Nexus Workspace</title>
+    <title>Account Deletion | Nexus Workspace</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; color: #334155; }
-        .danger-zone-header { background-color: #E11D48; color: white; border-top-left-radius: 40px; border-top-right-radius: 40px;}
-        .main-container { max-width: 900px; margin: 40px auto; background-color: white; border-radius: 40px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); }
-        .info-card { background-color: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 24px; padding: 24px; }
-        .step-badge { min-width: 36px; height: 36px; background-color: #6366F1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+        body { font-family: 'Inter', sans-serif; background-color: #F1F5F9; color: #334155; }
+        .nexus-danger-header { background: linear-gradient(135deg, #4338CA 0%, #312E81 100%); color: white; border-top-left-radius: 40px; border-top-right-radius: 40px;}
+        .main-container { max-width: 850px; margin: 40px auto; background-color: white; border-radius: 40px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); overflow: hidden; }
+        .step-container { border: 2px solid #F1F5F9; border-radius: 30px; padding: 40px; margin-bottom: 30px; position: relative; }
+        .step-number { position: absolute; top: -20px; left: 30px; background: #6366F1; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; border: 4px solid white; }
+        .highlight-box { background-color: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 20px; padding: 25px; }
+        .data-list-box { background-color: #EFF6FF; border: 1px solid #BFDBFE; border-radius: 20px; padding: 30px; }
     </style>
 </head>
-<body class="p-4 md:p-10">
+<body class="p-4 md:p-8">
+
     <div class="main-container">
-        <header class="danger-zone-header p-10 text-center">
-            <h1 class="text-4xl font-extrabold tracking-tight mb-2 uppercase">Delete Account</h1>
-            <p class="text-rose-100 font-medium tracking-wide">Nexus Workspace Data Removal</p>
+        <header class="nexus-danger-header p-12 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight mb-3">Account Deletion</h1>
+            <p class="text-indigo-100 font-medium">Control your personal data in the Nexus Ecosystem</p>
         </header>
 
-        <main class="p-8 md:p-12 space-y-10">
-            <div class="bg-amber-50 border-l-4 border-amber-400 p-6 rounded-r-2xl">
-                <h3 class="text-amber-800 font-bold mb-1">⚠️ Permanent Action</h3>
-                <p class="text-amber-700 text-sm leading-relaxed">Deletion is irreversible. All workspace projects, notes, and academic profiles will be permanently purged.</p>
+        <main class="p-8 md:p-14">
+            <p class="text-slate-500 mb-10 text-center font-medium">You can delete your account and all associated information at any time using one of the methods below:</p>
+
+            <div class="step-container">
+                <div class="step-number">1</div>
+                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                    <span class="text-green-500 text-2xl">✅</span> Instant In-App Deletion <span class="text-sm font-normal text-slate-400 italic">(Recommended)</span>
+                </h2>
+                
+                <div class="highlight-box mb-6">
+                    <h3 class="font-bold text-slate-800 mb-4 flex items-center gap-2">📑 Steps to Delete:</h3>
+                    <ul class="space-y-3 text-slate-600 font-medium">
+                        <li>1. Open the <span class="text-indigo-600">Nexus Workspace</span> app</li>
+                        <li>2. Go to <span class="text-indigo-600">Profile</span> or <span class="text-indigo-600">Settings</span></li>
+                        <li>3. Scroll down to find <span class="text-rose-600 font-bold">"Delete Account"</span></li>
+                        <li>4. Confirm your decision to purge all data</li>
+                    </ul>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="flex flex-col items-center text-center p-4 bg-orange-50 rounded-2xl border border-orange-100">
+                        <span class="text-2xl mb-1">⚡</span>
+                        <h4 class="font-bold text-orange-800 text-xs uppercase">Immediate Effect</h4>
+                        <p class="text-[10px] text-orange-700">Removed from live database instantly</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center p-4 bg-slate-50 rounded-2xl border border-slate-200">
+                        <span class="text-2xl mb-1">🔒</span>
+                        <h4 class="font-bold text-slate-800 text-xs uppercase">Complete Removal</h4>
+                        <p class="text-[10px] text-slate-600">All files and projects permanently deleted</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center p-4 bg-rose-50 rounded-2xl border border-rose-100">
+                        <span class="text-2xl mb-1">✔️</span>
+                        <h4 class="font-bold text-rose-800 text-xs uppercase">No Recovery</h4>
+                        <p class="text-[10px] text-rose-700">Account cannot be restored after deletion</p>
+                    </div>
+                </div>
             </div>
 
-            <section class="space-y-6">
-                <div class="flex items-center gap-4">
-                    <div class="step-badge">1</div>
-                    <h2 class="text-2xl font-bold text-slate-900">In-App Deletion</h2>
-                </div>
-                <div class="info-card ml-12 text-slate-600 space-y-2 font-medium">
-                    <p>1. Open <strong>Nexus Workspace</strong> app.</p>
-                    <p>2. Navigate to <strong>Settings</strong> > <strong>Privacy</strong>.</p>
-                    <p>3. Tap <span class="text-red-600">"Delete Account"</span> and confirm.</p>
-                </div>
-            </section>
+            <div class="step-container">
+                <div class="step-number">2</div>
+                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                    <span class="text-indigo-500 text-2xl">📧</span> Email Deletion Request
+                </h2>
+                <p class="text-slate-500 text-sm mb-6 leading-relaxed">
+                    If you no longer have access to the app, you must send the request from your registered email address for identity verification.
+                </p>
 
-            <section class="space-y-6">
-                <div class="flex items-center gap-4">
-                    <div class="step-badge">2</div>
-                    <h2 class="text-2xl font-bold text-slate-900">Email Request</h2>
-                </div>
-                <div class="info-card ml-12 space-y-6">
-                    <p class="text-slate-600 text-sm">If you cannot access the app, use the button below to send a request.</p>
-                    
-                    <a href="mailto:kiitnexus.in@gmail.com?subject=DATA%20DELETION%20REQUEST%20-%20NEXUS%20WORKSPACE&body=I%20request%20the%20permanent%20deletion%20of%20my%20Nexus%20Workspace%20account.%0A%0AFull%20Name%3A%20%5BName%5D%0ARegistered%20Email%3A%20%5BEmail%5D" 
-                       class="inline-block w-full text-center py-4 px-8 bg-indigo-600 hover:bg-indigo-700 text-white rounded-2xl font-bold transition-all shadow-lg">
-                        📩 Send Deletion Request Email
-                    </a>
+                <a href="mailto:kiitnexus.in@gmail.com?subject=DATA%20DELETION%20REQUEST%20-%20NEXUS%20WORKSPACE&body=I%20wish%20to%20request%20the%20permanent%20deletion%20of%20my%20Nexus%20Workspace%20account.%0A%0AFull%20Name%3A%20%5BEnter%20Name%5D%0ARegistered%20Email%3A%20%5BEnter%20Email%5D%0APhone%20Number%3A%20%5BEnter%20Phone%5D" 
+                   class="block w-full text-center py-5 bg-gradient-to-r from-indigo-600 to-indigo-800 hover:from-indigo-700 hover:to-indigo-900 text-white rounded-2xl font-bold transition-all shadow-xl mb-4">
+                    📩 Send Deletion Request Email
+                </a>
 
-                    <p class="text-[11px] text-slate-400 text-center uppercase tracking-widest">Processing Time: 48-72 Hours</p>
+                <div class="text-center bg-slate-50 p-4 rounded-xl border border-dashed border-slate-300">
+                    <p class="text-[11px] text-slate-500 font-bold uppercase tracking-widest">
+                        ⏱️ Processing Time: 48-72 Hours
+                    </p>
                 </div>
-            </section>
+            </div>
 
-            <div class="pt-10 border-t border-slate-100 text-center">
-                <a href="index.html" class="text-slate-400 font-bold hover:text-indigo-600 transition-colors">← RETURN TO HUB</a>
+            <div class="data-list-box mb-10">
+                <h3 class="text-lg font-bold text-blue-900 mb-4 flex items-center gap-2">🗑️ What Data Will Be Permanently Removed?</h3>
+                <ul class="space-y-3 text-sm text-blue-800 font-medium list-disc ml-5">
+                    <li><strong>Personal Information:</strong> Full Name, Email, and Phone Number.</li>
+                    <li><strong>Academic Profile:</strong> Domain, Engineering Branch.</li>
+                    <li><strong>Nexus Data:</strong> Workspace projects, collaborators, and shared files.</li>
+                    <li><strong>Auth Data:</strong> Hashed passwords, active tokens, and login sessions.</li>
+                    <li><strong>History:</strong> Daily Updates, interaction data, and Project Information.</li>
+                </ul>
+            </div>
+
+            <div class="p-6 border border-slate-200 rounded-2xl mb-10">
+                <p class="text-slate-400 text-[11px] leading-relaxed">
+                    <strong>Note on Anonymized Data:</strong> Aggregated, non-identifiable analytics may be retained for security and infrastructure improvement. This data cannot be linked back to you personally.
+                </p>
+            </div>
+
+            <div class="bg-indigo-50/50 p-10 rounded-3xl text-center border border-indigo-100">
+                <h4 class="font-bold text-indigo-900 mb-2">🗨️ Need Help or Have Questions?</h4>
+                <p class="text-indigo-700 text-sm mb-4">Our support team is here to assist you before you leave.</p>
+                <p class="text-indigo-900 font-extrabold">kiitnexus.in@gmail.com</p>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="privacy-policy.html" class="text-slate-400 font-bold hover:text-indigo-600 transition-colors uppercase tracking-widest text-xs">← Back to Privacy Policy</a>
             </div>
         </main>
     </div>
+
 </body>
 </html>
