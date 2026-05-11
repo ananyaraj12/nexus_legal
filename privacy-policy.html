@@ -5,84 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | Nexus Workspace</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; color: #334155; }
-        /* Matching the Navy Header from the Deletion Page */
         .nexus-header { background-color: #273248; color: white; border-top-left-radius: 40px; border-top-right-radius: 40px;}
-        .main-container { max-width: 900px; margin: 40px auto; background-color: white; border-radius: 40px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); border: 1px solid #E2E8F0; }
-        
-        /* Blue Info Box - modeled after KIIT Quest style */
-        .info-data-box { background-color: #EFF6FF; border: 1px solid #DBEAFE; border-radius: 20px; color: #1E3A8A; padding: 24px; }
-        
-        /* Doc-pill Section Styling */
-        .policy-pill { background-color: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 24px; padding: 32px; transition: border-color 0.2s ease;}
-        .policy-pill:hover { border-color: #CBD5E1; }
-
-        h2 { color: #0F172A; font-weight: 700; font-size: 1.25rem; display: flex; align-items: center; gap: 12px; }
-        .accent-icon { color: #38BDF8; font-size: 1.5rem; }
+        .main-container { max-width: 900px; margin: 40px auto; background-color: white; border-radius: 40px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); }
+        .info-blue-box { background-color: #EFF6FF; border: 1px solid #DBEAFE; border-radius: 20px; color: #1E3A8A; padding: 24px; }
+        .policy-section { background-color: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 24px; padding: 32px; }
+        h2 { color: #0F172A; font-weight: 700; font-size: 1.25rem; display: flex; align-items: center; gap: 10px; }
+        .accent-dot { width: 8px; height: 8px; background-color: #38BDF8; border-radius: 50%; }
     </style>
 </head>
 <body class="p-4 md:p-10">
     <div class="main-container">
         
         <header class="nexus-header p-10 text-center">
-            <div class="inline-flex items-center justify-center w-16 h-16 mb-4 bg-slate-700/50 rounded-2xl border border-slate-600 shadow-lg">
+            <div class="inline-flex items-center justify-center w-16 h-16 mb-4 bg-slate-700/50 rounded-2xl border border-slate-600">
                 <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             </div>
             <h1 class="text-4xl font-extrabold tracking-tight mb-2">Privacy Policy</h1>
-            <p class="text-slate-300 font-medium">Protecting your Nexus Workspace data</p>
+            <p class="text-slate-300 font-medium italic">Nexus Workspace Professional Standards</p>
         </header>
 
-        <main class="p-8 md:p-12 space-y-10">
+        <main class="p-8 md:p-12 space-y-8">
             
-            <div class="info-data-box flex items-start gap-4">
-                <div class="text-xl mt-1">🔐</div>
-                <div>
-                    <p class="font-bold text-lg mb-1">Your Privacy Matters</p>
-                    <p class="text-sm leading-relaxed">At <strong>Nexus Workspace</strong>, we are committed to maintaining the trust of our users. This policy details how your professional and academic information is handled within our ecosystem.</p>
-                </div>
+            <div class="info-blue-box">
+                <p class="font-bold text-lg mb-1 flex items-center gap-2"><span>🛡️</span> Privacy at a Glance</p>
+                <p class="text-sm">We respect your privacy and your right to control your personal data. Nexus Workspace is built to protect your professional collaboration and academic projects.</p>
             </div>
 
-            <section class="space-y-8">
-                <div class="policy-pill">
-                    <h2><span class="accent-icon">📊</span> 1. Data Collection</h2>
-                    <p class="mt-4 text-slate-600 leading-relaxed">
-                        We collect essential information to facilitate collaboration, such as your <strong>Full Name</strong> and <strong>Email Address</strong>. For specialized projects like "Scam Bust," we process data related to technical architecture and logic flows as directed by user input.
+            <section class="space-y-6">
+                <div class="policy-section">
+                    <h2><div class="accent-dot"></div> Information We Collect</h2>
+                    <p class="mt-4 text-slate-600 leading-relaxed text-sm">
+                        We collect minimal information required for service:
+                    </p>
+                    <ul class="mt-3 space-y-2 text-sm text-slate-600 list-disc ml-5">
+                        <li><strong>Personal Information:</strong> Full Name and Email Address.</li>
+                        <li><strong>Usage History:</strong> App activity and interaction data.</li>
+                        <li><strong>Saved Content:</strong> Project bookmarks and custom settings.</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h2><div class="accent-dot"></div> Data Usage & Security</h2>
+                    <p class="mt-4 text-slate-600 leading-relaxed text-sm">
+                        Your data is used to synchronize workspace content across devices and facilitate collaboration with group mates. All data is transferred via encrypted protocols to ensure your information stays within your workspace.
                     </p>
                 </div>
 
-                <div class="policy-pill">
-                    <h2><span class="accent-icon">⚙️</span> 2. Data Usage</h2>
-                    <p class="mt-4 text-slate-600 leading-relaxed">
-                        Data is used primarily to synchronize workspace content across devices and to allow real-time collaboration with group mates. We use high-fidelity infrastructure to ensure your project files and notes remain accessible and secure.
-                    </p>
-                </div>
-
-                <div class="policy-pill">
-                    <h2><span class="accent-icon">🛡️</span> 3. Security Standards</h2>
-                    <p class="mt-4 text-slate-600 leading-relaxed">
-                        Nexus Workspace utilizes industry-standard encryption for all data transfers. We implement security tokens and hashed authentication data to safeguard your professional workspace against unauthorized access.
-                    </p>
-                </div>
-
-                <div class="policy-pill">
-                    <h2><span class="accent-icon">🗑️</span> 4. User Rights</h2>
-                    <p class="mt-4 text-slate-600 leading-relaxed">
-                        You have the right to access, modify, or permanently delete your data at any time. Complete data removal can be initiated instantly through our app settings.
+                <div class="policy-section">
+                    <h2><div class="accent-dot"></div> Data Removal</h2>
+                    <p class="mt-4 text-slate-600 leading-relaxed text-sm">
+                        You can delete your account and all associated information at any time using our dedicated portal. Once deleted, your data is permanently removed from our live databases.
                     </p>
                     <div class="mt-6">
-                        <a href="deletion.html" class="text-blue-600 font-bold flex items-center gap-2 hover:underline">
-                            Go to Data Deletion Page →
+                        <a href="deletion.html" class="text-blue-600 font-bold text-sm hover:underline">
+                            Go to Deletion Page →
                         </a>
                     </div>
                 </div>
             </section>
 
-            <div class="border-t border-slate-100 pt-10 text-center space-y-6">
-                <a href="index.html" class="text-slate-400 font-semibold flex items-center justify-center gap-2 hover:text-slate-700 transition-colors">
-                    ← Back to Hub
-                </a>
+            <div class="border-t border-slate-100 pt-10 text-center space-y-4">
                 <p class="text-xs text-slate-400 font-bold uppercase tracking-widest">NEXUS Ecosystem &copy; 2026</p>
                 <p class="text-[11px] text-slate-400">support: kiitnexus.in@gmail.com</p>
             </div>
