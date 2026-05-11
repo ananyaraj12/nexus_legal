@@ -15,63 +15,47 @@
     </style>
 </head>
 <body class="p-4 md:p-10">
-
     <div class="main-container">
         <header class="nexus-header p-10 text-center">
-            <div class="inline-flex items-center justify-center w-16 h-16 mb-4 bg-slate-700/50 rounded-2xl border border-slate-600">
-                <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                </svg>
-            </div>
             <h1 class="text-4xl font-extrabold tracking-tight mb-2">Privacy Policy</h1>
-            <p class="text-slate-300 font-medium">Protecting your data in the Nexus Ecosystem</p>
+            <p class="text-slate-300 font-medium">Your Workspace Privacy Matters</p>
         </header>
 
         <main class="p-8 md:p-12 space-y-6">
-            
             <section class="policy-section">
-                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 1. Information Collection</h2>
+                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 1. Data Collection</h2>
                 <div class="space-y-4 text-slate-600 text-sm leading-relaxed">
-                    <p><strong>1.1 Data Provided by You:</strong> We collect your Full Name and Email Address to verify your identity and maintain your workspace settings.</p>
-                    <p><strong>1.2 Workspace Content:</strong> We store the notes, project files, and collaboration data you create within the app to ensure cross-device synchronization.</p>
-                    <p><strong>1.3 Technical Data:</strong> We automatically collect device type, operating system, and IP addresses to prevent unauthorized access and improve app stability.</p>
+                    <p><strong>1.1 Personal Data:</strong> We collect your Name and Email to identify your workspace across different platforms.</p>
+                    <p><strong>1.2 Academic Information:</strong> For students, we collect branch and semester data to provide tailored project templates.</p>
+                    <p><strong>1.3 Usage Logs:</strong> We log technical interactions (device OS, browser) solely to optimize workspace performance.</p>
                 </div>
             </section>
 
             <section class="policy-section">
-                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 2. How We Use Your Data</h2>
+                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 2. Data Security & Hosting</h2>
                 <p class="text-slate-600 text-sm leading-relaxed">
-                    Your data is used solely to provide and improve the **Nexus Workspace** experience. This includes real-time project collaboration, cloud storage of your academic/professional materials, and security monitoring. We do not share your private workspace content with any third-party advertisers.
+                    All workspace data is stored in **MongoDB Atlas** using AES-256 encryption. We utilize TLS 1.3 for all data transfers. Your passwords are never stored in plain text; they are hashed using secure cryptographic salt.
                 </p>
             </section>
 
             <section class="policy-section">
-                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 3. Data Storage & Security</h2>
+                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 3. Usage & Sharing</h2>
                 <p class="text-slate-600 text-sm leading-relaxed">
-                    We utilize **MongoDB Atlas** for secure data hosting. All sensitive information is encrypted in transit and at rest. Access to our databases is strictly limited to authorized personnel via secure authentication protocols.
+                    Nexus Workspace is a productivity ecosystem. We do not sell your personal data or read your private project files for advertising purposes. Data sharing is limited only to the collaborators you explicitly invite to your projects.
                 </p>
             </section>
 
             <section class="policy-section">
-                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 4. Your Rights & Data Control</h2>
-                <p class="text-slate-600 text-sm mb-6 leading-relaxed">
-                    You have the right to access, update, or delete your information at any time. If you wish to permanently remove your account and all associated data, please visit our dedicated deletion portal.
-                </p>
-                <a href="deletion.html" class="inline-flex items-center gap-2 text-blue-600 font-bold hover:underline">
-                    View Data Deletion Policy <span>→</span>
-                </a>
+                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 4. User Rights</h2>
+                <p class="text-slate-600 text-sm mb-6">You have the right to request a full export of your data or permanent deletion of your account.</p>
+                <a href="deletion.html" class="text-blue-600 font-bold hover:underline">Manage Account Deletion →</a>
             </section>
 
-            <div class="mt-12 text-center border-t border-slate-100 pt-10">
-                <p class="text-slate-500 text-sm mb-4">Questions? Contact us at <span class="font-bold text-slate-800">kiitnexus.in@gmail.com</span></p>
-                <a href="index.html" class="text-slate-400 font-semibold hover:text-slate-600 transition-colors">← Return to Hub</a>
-                <div class="mt-8">
-                    <p class="text-[10px] text-slate-400 uppercase tracking-widest font-bold">NEXUS Ecosystem © 2026</p>
-                </div>
+            <div class="mt-12 text-center border-t border-slate-100 pt-8">
+                <a href="index.html" class="text-slate-500 font-semibold mb-4 block">← Return to Hub</a>
+                <p class="text-[10px] text-slate-400 uppercase tracking-widest font-bold">NEXUS Ecosystem © 2026</p>
             </div>
-
         </main>
     </div>
-
 </body>
 </html>

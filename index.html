@@ -7,102 +7,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { 
-            font-family: 'Inter', sans-serif; 
-            background-color: #0F172A; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            min-height: 100vh; 
-            margin: 0; 
-        }
-
-        /* Pinteresty/Minimal Glassmorphism Card */
-        .main-card { 
-            background: #FFFFFF; 
-            border-radius: 40px; 
-            width: 100%; 
-            max-width: 420px; 
-            padding: 60px 40px; 
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); 
-            text-align: center; 
-            border: 1px solid rgba(255, 255, 255, 0.1); 
-        }
-
-        /* Premium Metallic Logo Container */
+        body { font-family: 'Inter', sans-serif; background-color: #0F172A; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+        .main-card { background: #FFFFFF; border-radius: 40px; width: 100%; max-width: 420px; padding: 60px 40px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); text-align: center; }
         .logo-container {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            margin: 0 auto 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            position: relative; width: 100px; height: 100px; margin: 0 auto 30px;
+            display: flex; align-items: center; justify-content: center;
             background: radial-gradient(circle, #2a3447 0%, #111827 100%);
-            border: 3px solid #00d2ff;
-            border-radius: 24px;
-            box-shadow: 0 0 25px rgba(0, 210, 255, 0.6), 
-                        inset 0 0 15px rgba(0, 210, 255, 0.3);
+            border: 3px solid #00d2ff; border-radius: 24px;
+            box-shadow: 0 0 25px rgba(0, 210, 255, 0.6), inset 0 0 15px rgba(0, 210, 255, 0.3);
             overflow: hidden;
         }
-
-        /* Metallic Texture Overlay */
         .logo-container::before {
-            content: "";
-            position: absolute;
-            inset: 0;
+            content: ""; position: absolute; inset: 0;
             background-image: url('https://www.transparenttextures.com/patterns/brushed-alum.png');
-            opacity: 0.2;
-            pointer-events: none;
+            opacity: 0.2; pointer-events: none;
         }
-
-        .nexus-n {
-            filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
-            z-index: 10;
-        }
-
-        /* Buttons with consistent Nexus styling */
         .btn-nexus {
-            display: block; 
-            width: 100%; 
-            padding: 18px; 
-            margin-bottom: 16px;
-            border-radius: 20px; 
-            border: 1px solid #E2E8F0;
-            color: #1E293B; 
-            font-weight: 600; 
-            text-decoration: none;
-            transition: all 0.3s ease; 
-            background: #F8FAFC;
+            display: block; width: 100%; padding: 18px; margin-bottom: 16px;
+            border-radius: 20px; border: 1px solid #E2E8F0;
+            color: #1E293B; font-weight: 600; text-decoration: none;
+            transition: all 0.3s ease; background: #F8FAFC;
         }
-
-        .btn-nexus:hover { 
-            border-color: #00d2ff; 
-            transform: translateY(-3px); 
-            background: #FFFFFF;
-            box-shadow: 0 10px 15px -3px rgba(0, 210, 255, 0.1);
-        }
+        .btn-nexus:hover { border-color: #00d2ff; transform: translateY(-3px); background: #FFFFFF; }
     </style>
 </head>
 <body>
     <div class="main-card">
         <div class="logo-container">
-            <svg class="nexus-n" width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 20V4L20 20V4" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4L20 20V4"/></svg>
         </div>
-
-        <h1 class="text-3xl font-bold text-slate-900 mb-2 tracking-tight">NEXUS WORKSPACE</h1>
-        <p class="text-slate-500 font-medium mb-12 uppercase tracking-widest text-[10px]">An Initiative by KIIT Nexus</p>
-        
+        <h1 class="text-3xl font-bold text-slate-900 mb-2 tracking-tight uppercase">Nexus Workspace</h1>
+        <p class="text-slate-500 font-medium mb-12 uppercase tracking-widest text-[10px]">Initiative by KIIT Nexus</p>
         <div class="space-y-4">
             <a href="privacy-policy.html" class="btn-nexus">Privacy Policy</a>
             <a href="deletion.html" class="btn-nexus">Data Deletion Policy</a>
         </div>
-
-        <div class="mt-16 border-t border-slate-100 pt-8">
-            <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">NEXUS Workspace © 2026</p>
-            <p class="text-[11px] text-slate-400 italic">support: kiitnexus.in@gmail.com</p>
+        <div class="mt-16 border-t border-slate-100 pt-8 text-slate-400 uppercase tracking-widest text-[10px] font-bold">
+            NEXUS Ecosystem © 2026
         </div>
     </div>
 </body>
