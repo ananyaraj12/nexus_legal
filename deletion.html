@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Deletion - Nexus Workspace</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Account & Data Deletion</h1>
-    <p>At Nexus Workspace, we believe you should have full control over your data.</p>
+<body class="bg-slate-50 p-6 md:p-24 flex items-center justify-center">
+    <div class="max-w-2xl w-full bg-white p-10 md:p-16 rounded-[2rem] shadow-sm border border-slate-100">
+        <h1 class="text-3xl font-bold text-slate-900 mb-6">Request Data Deletion</h1>
+        <p class="text-slate-600 mb-8">We respect your right to data portability and deletion. Follow the steps below to permanently remove your account from Nexus Workspace.</p>
 
-    <h2>How to delete your data:</h2>
-    <ol>
-        <li><strong>In-App:</strong> Go to Settings > Profile > Delete Account.</li>
-        <li><strong>Email Request:</strong> Send an email to <strong>kiitnexus.in@gmail.com</strong> with the subject "Data Deletion Request".</li>
-    </ol>
+        <div class="space-y-6">
+            <div class="flex gap-4">
+                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold">1</div>
+                <p class="text-slate-700">Navigate to <strong>Settings > Account</strong> within the Nexus Workspace app and select "Delete Account".</p>
+            </div>
+            <div class="flex gap-4">
+                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold">2</div>
+                <p class="text-slate-700">Alternatively, email <strong>kiitnexus.in@gmail.com</strong> with your registered email and the subject "DELETE ACCOUNT".</p>
+            </div>
+        </div>
 
-    <h2>What gets deleted?</h2>
-    <p>Upon request, we will permanently remove:</p>
-    <ul>
-        <li>Your profile information and email address.</li>
-        <li>All workspace content created by you.</li>
-        <li>Application logs associated with your account.</li>
-    </ul>
-    <p>Data is typically purged from our active databases within 30 days of the request.</p>
+        <div class="mt-10 p-6 bg-amber-50 border border-amber-100 rounded-2xl text-amber-800 text-sm italic">
+            <strong>Note:</strong> Deletion is permanent. All notes, projects, and collaboration history will be purged from our servers within 30 days.
+        </div>
+        
+        <a href="index.html" class="mt-8 block text-center text-slate-400 hover:text-slate-600 font-medium transition-colors">← Return Home</a>
+    </div>
 </body>
 </html>

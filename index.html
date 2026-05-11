@@ -3,28 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Workspace | Support & Privacy</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Nexus Workspace | Support & Legal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { max-width: 800px; margin: auto; padding: 2rem; line-height: 1.6; }
-        .container { text-align: center; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; background: #fff; }
-        .links { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
-        a { text-decoration: none; font-weight: 600; }
+        body { font-family: 'Inter', sans-serif; background: radial-gradient(circle at top left, #f8fafc, #f1f5f9); }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.4); }
+        .nexus-gradient { background: linear-gradient(135deg, #1e293b 0%, #334155 100%); }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>🏢 Nexus Workspace</h1>
-        <p>Your unified digital environment for collaboration and productivity.</p>
+<body class="min-h-screen flex flex-col items-center justify-center p-6">
+    <div class="max-w-md w-full glass rounded-[2.5rem] shadow-2xl p-10 text-center">
+        <div class="mb-8 inline-flex items-center justify-center w-20 h-20 nexus-gradient text-white rounded-3xl shadow-xl text-4xl">
+            NX
+        </div>
+        <h1 class="text-3xl font-bold text-slate-900 mb-2">Nexus Workspace</h1>
+        <p class="text-slate-500 mb-10 font-medium">Elevating professional collaboration.</p>
         
-        <div class="links">
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="deletion.html">Data Deletion Policy</a>
-            <a href="kiitnexus.in@gmail.com">Contact Support</a>
+        <div class="space-y-4">
+            <a href="privacy-policy.html" class="block w-full py-4 px-6 bg-white hover:bg-slate-50 border border-slate-200 rounded-2xl text-slate-700 font-semibold transition-all shadow-sm">
+                Privacy Policy
+            </a>
+            <a href="deletion.html" class="block w-full py-4 px-6 bg-white hover:bg-slate-50 border border-slate-200 rounded-2xl text-slate-700 font-semibold transition-all shadow-sm">
+                Data Deletion Policy
+            </a>
+            <a href="mailto:kiitnexus.in@gmail.com" class="block w-full py-4 px-6 nexus-gradient text-white rounded-2xl font-semibold transition-all shadow-lg hover:opacity-90">
+                Contact Support
+            </a>
+        </div>
+        
+        <div class="mt-10 border-t border-slate-100 pt-6">
+            <p class="text-xs text-slate-400 font-bold uppercase tracking-[0.2em]">Nexus Ecosystem &copy; 2026</p>
+            <p class="text-[10px] text-slate-400 mt-1">support: kiitnexus.in@gmail.com</p>
         </div>
     </div>
-    <footer style="margin-top: 50px; font-size: 0.8rem; text-align: center; color: #666;">
-        &copy; 2026 Nexus Workspace Team
-    </footer>
 </body>
 </html>

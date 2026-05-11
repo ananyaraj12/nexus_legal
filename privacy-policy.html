@@ -4,30 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Nexus Workspace</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #334155; line-height: 1.8; }
+        .content-card { background: #ffffff; border: 1px solid #f1f5f9; }
+    </style>
 </head>
-<body>
-    <h1>Privacy Policy</h1>
-    <p>Last updated: May 11, 2026</p>
-    <p>Nexus Workspace is committed to providing a secure and private workspace environment. This policy explains how we handle your data.</p>
+<body class="bg-slate-50 p-6 md:p-16 lg:p-24">
+    <div class="max-w-4xl mx-auto content-card p-8 md:p-12 rounded-[2rem] shadow-sm">
+        <a href="index.html" class="text-blue-600 font-semibold flex items-center gap-2 hover:translate-x-[-4px] transition-transform mb-8">
+            ← Back to Hub
+        </a>
+        
+        <h1 class="text-4xl font-bold text-slate-900 mb-4">Privacy Policy</h1>
+        <p class="text-slate-400 mb-10">Last Updated: May 11, 2026</p>
 
-    <h2>1. Information Collection and Use</h2>
-    <p>For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to email address and user-generated content (notes, tasks, or messages).</p>
-    
-    <h2>2. Third-Party Services</h2>
-    <p>The app does use third-party services that may collect information used to identify you:</p>
-    <ul>
-        <li><a href="https://www.google.com/policies/privacy/">Google Play Services</a></li>
-        <li>Google Analytics for Firebase</li>
-    </ul>
+        <article class="space-y-8 text-slate-600">
+            <section>
+                <h2 class="text-xl font-bold text-slate-800 mb-3">1. Information Collection</h2>
+                <p>Nexus Workspace collects minimal data necessary to provide a collaborative environment. This includes your account email, profile name, and user-generated content (notes, tasks, and shared project data).</p>
+            </section>
 
-    <h2>3. Data Security</h2>
-    <p>We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure.</p>
+            <section>
+                <h2 class="text-xl font-bold text-slate-800 mb-3">2. Third-Party Services</h2>
+                <p>Our infrastructure utilizes standard industry providers for hosting and analytics:</p>
+                <ul class="list-disc pl-6 space-y-2 mt-2">
+                    <li>Google Play Services (App Distribution)</li>
+                    <li>Vercel (Web Infrastructure)</li>
+                    <li>Firebase (Authentication & Real-time Sync)</li>
+                </ul>
+            </section>
 
-    <h2>4. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes.</p>
+            <section>
+                <h2 class="text-xl font-bold text-slate-800 mb-3">3. Data Security</h2>
+                <p>All data is encrypted in transit using industry-standard SSL/TLS protocols. We prioritize the integrity of your professional workspace data.</p>
+            </section>
 
-    <h2>5. Contact Us</h2>
-    <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at <strong>kiitnexus.in@gmail.com</strong>.</p>
+            <section class="p-6 bg-slate-50 rounded-2xl border border-slate-100 mt-12">
+                <h2 class="text-xl font-bold text-slate-800 mb-2">Contact Legal</h2>
+                <p>For privacy inquiries, contact: <strong>kiitnexus.in@gmail.com</strong></p>
+            </section>
+        </article>
+    </div>
 </body>
 </html>
