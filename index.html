@@ -3,63 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Workspace | Hub</title>
+    <title>Nexus Workspace | Legal Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0A1121; color: #F1F5F9; }
+        body { font-family: 'Inter', sans-serif; background-color: #0A1425; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+        .main-card { background: #FFFFFF; border-radius: 48px; width: 100%; max-width: 420px; padding: 60px 40px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); text-align: center; }
         
-        /* The main container's soft background and border from the shot */
-        .dashboard-container { 
-            background-color: #FFFFFF; 
-            border: 1px solid #E2E8F0; 
+        /* Fixed Logo with Neon Blue Glow */
+        .logo-box {
+            background-color: #20293A;
+            width: 80px; height: 80px;
+            border-radius: 24px;
+            display: inline-flex; align-items: center; justify-content: center;
+            border: 2px solid #38BDF8;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+            margin-bottom: 30px;
         }
         
-        /* Glass/border style for the upper two buttons */
-        .glass-button { 
-            background: rgba(255, 255, 255, 0.7); 
-            backdrop-filter: blur(5px); 
-            border: 1px solid #E2E8F0; 
+        .btn-outline {
+            display: block; width: 100%; padding: 18px; margin-bottom: 16px;
+            border-radius: 16px; border: 1px solid #E2E8F0;
+            color: #475569; font-weight: 600; text-decoration: none;
             transition: all 0.2s ease;
         }
-        .glass-button:hover { background-color: #F8FAFC; }
-        
-        /* The solid navy style for the main CTA and Logo */
-        .navy-style { background-color: #273248; border: 1px solid #E2E8F0; transition: all 0.2s ease; }
-        .navy-style:hover { background-color: #1F2937; }
-
-        /* NEON GLOW Effect from the image */
-        .neon-glow {
-            box-shadow: 0 0 10px rgba(100, 210, 255, 0.2), 
-                        0 0 20px rgba(100, 210, 255, 0.1);
-        }
+        .btn-outline:hover { background-color: #F8FAFC; border-color: #CBD5E1; }
     </style>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center p-6 lg:p-12">
-    <div class="max-w-md w-full dashboard-container rounded-[2.5rem] shadow-2xl p-10 text-center border-slate-200">
-        
-        <div class="mb-8 inline-flex items-center justify-center w-20 h-20 navy-style text-white rounded-3xl text-4xl shadow-lg border-2 border-slate-300">
-            NX
+<body>
+    <div class="main-card">
+        <div class="logo-box">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 20 4 4 20 20 20 4"></polyline></svg>
         </div>
-        
-        <h1 class="text-3xl font-bold text-slate-900 mb-2 tracking-tight">Nexus Workspace</h1>
-        <p class="text-slate-600 mb-10 font-medium text-md px-2"> An initiative by KIIT Nexus.</p>
-        
+
+        <h1 class="text-3xl font-bold text-slate-900 mb-2">NEXUS WORKSPACE</h1>
+        <p class="text-slate-500 font-medium mb-12">An Initiative by KIIT Nexus</p>
+
         <div class="space-y-4">
-            <a href="privacy-policy.html" class="block w-full py-4 px-6 glass-button rounded-xl text-slate-700 font-semibold shadow-sm">
-                Privacy Policy
-            </a>
-            <a href="deletion.html" class="block w-full py-4 px-6 glass-button rounded-xl text-slate-700 font-semibold shadow-sm">
-                Data Deletion Policy
-            </a>
-            <a href="mailto:ananyaraj12@gmail.com" class="block w-full py-4 px-6 navy-style text-white rounded-xl font-semibold shadow-xl neon-glow hover:translate-y-[-2px]">
-                Contact Support
-            </a>
+            <a href="privacy-policy.html" class="btn-outline">Privacy Policy</a>
+            <a href="deletion.html" class="btn-outline">Data Deletion Policy</a>
         </div>
-        
-        <div class="mt-12 border-t border-slate-100 pt-6">
-            <p class="text-xs text-slate-400 font-bold uppercase tracking-[0.2em] mb-1"> KIIT Nexus Workspace © 2026</p>
-            <p class="text-[11px] text-slate-400">support: kiitnexus.in@gmail.com</p>
+
+        <div class="mt-16 border-t border-slate-100 pt-8 text-center">
+            <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">NEXUS ECOSYSTEM © 2026</p>
+            <a href="mailto:kiitnexus.in@gmail.com" class="text-[11px] text-slate-400 hover:text-sky-500 transition-colors">kiitnexus.in@gmail.com</a>
         </div>
     </div>
 </body>
