@@ -5,92 +5,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | Nexus Workspace</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; color: #334155; }
-        .nexus-header { background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%); color: white; border-top-left-radius: 40px; border-top-right-radius: 40px;}
-        .main-container { max-width: 900px; margin: 40px auto; background-color: white; border-radius: 40px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); }
-        .policy-section { background-color: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 24px; padding: 32px; margin-bottom: 24px; }
-        .accent-dot { width: 8px; height: 8px; background-color: #38BDF8; border-radius: 50%; display: inline-block; margin-right: 10px; }
+        :root {
+            --nexus-primary: #38BDF8;
+            --nexus-dark: #0F172A;
+        }
+
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background: linear-gradient(-45deg, #f1f5f9, #e2e8f0, #f8fafc, #cbd5e1);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: #334155; 
+            min-height: 100vh;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .main-container { 
+            max-width: 900px; 
+            margin: 60px auto; 
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 48px; 
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08); 
+            overflow: hidden;
+        }
+
+        .nexus-header { 
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); 
+            color: white; 
+            padding: 80px 40px;
+            position: relative;
+        }
+
+        .nexus-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(to top, rgba(255,255,255,0.1), transparent);
+        }
+
+        .policy-section { 
+            background: white; 
+            border: 1px solid #f1f5f9; 
+            border-radius: 32px; 
+            padding: 40px; 
+            margin-bottom: 24px; 
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .policy-section:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+            border-color: var(--nexus-primary);
+        }
+
+        .accent-dot { 
+            width: 10px; 
+            height: 10px; 
+            background: var(--nexus-primary); 
+            border-radius: 50%; 
+            display: inline-block; 
+            margin-right: 12px;
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+        }
+
+        .link-chip {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 8px 16px;
+            border-radius: 12px;
+            display: inline-block;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .link-chip:hover {
+            background: #0f172a;
+            color: white;
+            border-color: #0f172a;
+        }
     </style>
 </head>
 <body class="p-4 md:p-10">
 
     <div class="main-container">
-        <header class="nexus-header p-10 text-center">
-            <div class="inline-flex items-center justify-center w-16 h-16 mb-4 bg-slate-700/50 rounded-2xl border border-slate-600">
-                <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        <header class="nexus-header text-center">
+            <div class="logo-container inline-flex items-center justify-center w-28 h-28 mb-6 bg-white/5 rounded-[2rem] border border-white/10 overflow-hidden shadow-2xl backdrop-blur-md">
+                <img src="assets/logo.jpeg" alt="Nexus Logo" class="w-full h-full object-contain p-3">
             </div>
-            <h1 class="text-4xl font-extrabold tracking-tight mb-2 uppercase">Privacy Policy</h1>
-            <p class="text-slate-300 font-medium">Data Privacy for Nexus Workspace Society Management</p>
+            
+            <h1 class="text-5xl font-extrabold tracking-tight mb-3">Privacy Policy</h1>
+            <p class="text-slate-400 font-medium text-lg tracking-wide uppercase">Nexus Community & Workspace</p>
         </header>
 
-        <main class="p-8 md:p-12">
+        <main class="p-8 md:p-16">
             
-            <section class="mb-8 text-center border-b border-slate-100 pb-8">
-                <p class="text-sm text-slate-500"><strong>Effective Date:</strong> May 12, 2026</p>
-                <p class="text-sm text-slate-500 font-bold uppercase tracking-widest">App Name: Nexus Workspace</p>
-            </section>
+            <div class="flex flex-col md:flex-row justify-between items-center mb-12 px-4 gap-4">
+                <div class="bg-sky-50 text-sky-700 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest border border-sky-100">
+                    Effective: May 12, 2026
+                </div>
+            </div>
 
             <section class="policy-section">
-                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 1. Introduction</h2>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    This Privacy Policy describes how <strong>Nexus Workspace</strong> ("we," "our," or "us") collects, uses, and shares personal information of society members. This app is designed exclusively for society record-keeping. By using the app, you agree to the collection and use of information in accordance with this policy.
+                <h2 class="text-2xl font-extrabold text-slate-900 mb-6 flex items-center"><span class="accent-dot"></span> 1. Introduction</h2>
+                <p class="text-slate-500 leading-loose text-lg">
+                    This Privacy Policy describes how <strong>Nexus Workspace</strong> ("we," "our," or "us") collects, uses, and shares personal information of community members. This app is designed for community collaboration, professional networking, and workspace record-keeping.
                 </p>
             </section>
 
             <section class="policy-section">
-                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 2. Information Collection and Use</h2>
-                <div class="space-y-4 text-slate-600 text-sm leading-relaxed">
-                    <p>For a better experience while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to:</p>
-                    <ul class="list-disc ml-6 space-y-2 font-medium">
-                        <li><strong>Personal Identification:</strong> Name, Phone Number, and Flat/Unit Number.</li>
-                        <li><strong>Contact Information:</strong> Email address for digital society communication.</li>
-                        <li><strong>Society Records:</strong> Maintenance logs, visitor records, and member directories.</li>
-                    </ul>
-                    <p>The information requested will be used strictly for the internal administration of your residential society within the <strong>Nexus Workspace</strong>.</p>
+                <h2 class="text-2xl font-extrabold text-slate-900 mb-6 flex items-center"><span class="accent-dot"></span> 2. Information Usage</h2>
+                <div class="space-y-6">
+                    <p class="text-slate-500 leading-relaxed">For a high-quality experience, we require certain personally identifiable information:</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                            <span class="block font-bold text-slate-800 mb-1">Identity Data</span>
+                            <span class="text-sm text-slate-500">Full Name, Workspace Domain, and Roles.</span>
+                        </div>
+                        <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                            <span class="block font-bold text-slate-800 mb-1">Contact Details</span>
+                            <span class="text-sm text-slate-500">KIIT Email and registered personal emails.</span>
+                        </div>
+                        <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                            <span class="block font-bold text-slate-800 mb-1">Social Integration</span>
+                            <span class="text-sm text-slate-500">LinkedIn and GitHub developer profiles.</span>
+                        </div>
+                        <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                            <span class="block font-bold text-slate-800 mb-1">Media Storage</span>
+                            <span class="text-sm text-slate-500">Avatars and project assets via Cloudinary.</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section class="policy-section">
-                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 3. Third-Party Services</h2>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    To maintain professional security and uptime, we use third-party services that may collect information used to identify you:
+                <h2 class="text-2xl font-extrabold text-slate-900 mb-6 flex items-center"><span class="accent-dot"></span> 3. Third-Party Stack</h2>
+                <p class="text-slate-500 leading-relaxed mb-6">
+                    We leverage industry-standard providers to ensure uptime and security. By using Nexus, you acknowledge data processing by:
                 </p>
-                <ul class="list-disc ml-6 mt-4 text-blue-600 font-bold">
-                    <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
-                    <li><a href="https://www.mongodb.com/legal/privacy-policy" target="_blank">MongoDB Atlas (Data Storage)</a></li>
-                </ul>
+                <div class="flex flex-wrap gap-3">
+                    <a href="https://www.google.com/policies/privacy/" class="link-chip">Google OAuth</a>
+                    <a href="https://www.mongodb.com/legal/privacy-policy" class="link-chip">MongoDB Atlas</a>
+                    <a href="https://cloudinary.com/privacy" class="link-chip">Cloudinary</a>
+                </div>
             </section>
 
             <section class="policy-section">
-                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 4. Data Security</h2>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    We value your trust in providing us your Personal Information. We utilize encrypted <strong>MongoDB Atlas</strong> clusters and TLS 1.3 for all data transfers. Within the <strong>Nexus Workspace</strong>, your sensitive data is restricted to authorized society administrators only.
+                <h2 class="text-2xl font-extrabold text-slate-900 mb-6 flex items-center"><span class="accent-dot"></span> 4. Security & Data Deletion</h2>
+                <p class="text-slate-500 leading-relaxed mb-8">
+                    Data is protected via TLS 1.3 encryption. You maintain full ownership of your data and can request deletion at any time.
                 </p>
-            </section>
-
-            <section class="policy-section">
-                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 5. Data Deletion</h2>
-                <p class="text-slate-600 text-sm mb-6 leading-relaxed">
-                    In compliance with global data protection standards and Google Play's Data Deletion requirement, users can request the permanent removal of their records.
-                </p>
-                <a href="deletion.html" class="inline-flex items-center gap-2 text-indigo-600 font-bold hover:underline">
-                    Access Data Deletion Portal <span>→</span>
+                <a href="deletion.html" class="inline-flex items-center justify-center w-full md:w-auto px-8 py-4 bg-sky-500 hover:bg-sky-600 text-white font-bold rounded-2xl transition-all shadow-lg shadow-sky-200">
+                    Access Data Deletion Portal
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                 </a>
             </section>
 
             <section class="policy-section">
-                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 6. Contact Us</h2>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    If you have any questions or suggestions about our Privacy Policy in the <strong>Nexus Workspace</strong>, contact us at:
-                </p>
-                <p class="mt-4 font-extrabold text-slate-900 bg-slate-100 inline-block px-4 py-2 rounded-lg">kiitnexus.in@gmail.com</p>
+                <h2 class="text-2xl font-extrabold text-slate-900 mb-6 flex items-center"><span class="accent-dot"></span> 5. Contact Support</h2>
+                <div class="bg-slate-900 p-8 rounded-[2rem] text-center text-white">
+                    <p class="mb-4 text-slate-400 font-medium italic">Have questions regarding your privacy?</p>
+                    <p class="text-xl font-bold tracking-tight">kiitnexus.in@gmail.com</p>
+                </div>
             </section>
 
-            <div class="mt-12 text-center border-t border-slate-100 pt-10">
-                <a href="index.html" class="text-slate-400 font-semibold tracking-widest text-xs uppercase">← Back to Hub</a>
-                <p class="mt-8 text-[10px] text-slate-400 uppercase tracking-widest font-bold">Nexus Workspace © 2026</p>
+            <div class="mt-16 text-center space-y-8">
+                <a href="index.html" class="inline-block text-slate-400 font-bold hover:text-slate-900 transition-colors uppercase tracking-widest text-xs">
+                    ← Return to Ecosystem Hub
+                </a>
+                <p class="text-[10px] text-slate-400 uppercase tracking-[0.3em] font-extrabold">
+                    Nexus Workspace &copy; 2026 &bull; Built for Community
+                </p>
             </div>
 
         </main>
