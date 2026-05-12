@@ -8,54 +8,93 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; color: #334155; }
-        .nexus-header { background-color: #273248; color: white; border-top-left-radius: 40px; border-top-right-radius: 40px;}
+        .nexus-header { background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%); color: white; border-top-left-radius: 40px; border-top-right-radius: 40px;}
         .main-container { max-width: 900px; margin: 40px auto; background-color: white; border-radius: 40px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); }
         .policy-section { background-color: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 24px; padding: 32px; margin-bottom: 24px; }
         .accent-dot { width: 8px; height: 8px; background-color: #38BDF8; border-radius: 50%; display: inline-block; margin-right: 10px; }
     </style>
 </head>
 <body class="p-4 md:p-10">
+
     <div class="main-container">
         <header class="nexus-header p-10 text-center">
-            <h1 class="text-4xl font-extrabold tracking-tight mb-2">Privacy Policy</h1>
-            <p class="text-slate-300 font-medium">Your Workspace Privacy Matters</p>
+            <div class="inline-flex items-center justify-center w-16 h-16 mb-4 bg-slate-700/50 rounded-2xl border border-slate-600">
+                <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h1 class="text-4xl font-extrabold tracking-tight mb-2 uppercase">Privacy Policy</h1>
+            <p class="text-slate-300 font-medium">Data Privacy for Nexus Workspace Society Management</p>
         </header>
 
-        <main class="p-8 md:p-12 space-y-6">
+        <main class="p-8 md:p-12">
+            
+            <section class="mb-8 text-center border-b border-slate-100 pb-8">
+                <p class="text-sm text-slate-500"><strong>Effective Date:</strong> May 12, 2026</p>
+                <p class="text-sm text-slate-500 font-bold uppercase tracking-widest">App Name: Nexus Workspace</p>
+            </section>
+
             <section class="policy-section">
-                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 1. Data Collection</h2>
+                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 1. Introduction</h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    This Privacy Policy describes how <strong>Nexus Workspace</strong> ("we," "our," or "us") collects, uses, and shares personal information of society members. This app is designed exclusively for society record-keeping. By using the app, you agree to the collection and use of information in accordance with this policy.
+                </p>
+            </section>
+
+            <section class="policy-section">
+                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 2. Information Collection and Use</h2>
                 <div class="space-y-4 text-slate-600 text-sm leading-relaxed">
-                    <p><strong>1.1 Personal Data:</strong> We collect your Name and Email to identify your workspace across different platforms.</p>
-                    <p><strong>1.2 Academic Information:</strong> For students, we collect branch and semester data to provide tailored project templates.</p>
-                    <p><strong>1.3 Usage Logs:</strong> We log technical interactions (device OS, browser) solely to optimize workspace performance.</p>
+                    <p>For a better experience while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to:</p>
+                    <ul class="list-disc ml-6 space-y-2 font-medium">
+                        <li><strong>Personal Identification:</strong> Name, Phone Number, and Flat/Unit Number.</li>
+                        <li><strong>Contact Information:</strong> Email address for digital society communication.</li>
+                        <li><strong>Society Records:</strong> Maintenance logs, visitor records, and member directories.</li>
+                    </ul>
+                    <p>The information requested will be used strictly for the internal administration of your residential society within the <strong>Nexus Workspace</strong>.</p>
                 </div>
             </section>
 
             <section class="policy-section">
-                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 2. Data Security & Hosting</h2>
+                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 3. Third-Party Services</h2>
                 <p class="text-slate-600 text-sm leading-relaxed">
-                    All workspace data is stored in **MongoDB Atlas** using AES-256 encryption. We utilize TLS 1.3 for all data transfers. Your passwords are never stored in plain text; they are hashed using secure cryptographic salt.
+                    To maintain professional security and uptime, we use third-party services that may collect information used to identify you:
+                </p>
+                <ul class="list-disc ml-6 mt-4 text-blue-600 font-bold">
+                    <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
+                    <li><a href="https://www.mongodb.com/legal/privacy-policy" target="_blank">MongoDB Atlas (Data Storage)</a></li>
+                </ul>
+            </section>
+
+            <section class="policy-section">
+                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 4. Data Security</h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    We value your trust in providing us your Personal Information. We utilize encrypted <strong>MongoDB Atlas</strong> clusters and TLS 1.3 for all data transfers. Within the <strong>Nexus Workspace</strong>, your sensitive data is restricted to authorized society administrators only.
                 </p>
             </section>
 
             <section class="policy-section">
-                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 3. Usage & Sharing</h2>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    Nexus Workspace is a productivity ecosystem. We do not sell your personal data or read your private project files for advertising purposes. Data sharing is limited only to the collaborators you explicitly invite to your projects.
+                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 5. Data Deletion</h2>
+                <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                    In compliance with global data protection standards and Google Play's Data Deletion requirement, users can request the permanent removal of their records.
                 </p>
+                <a href="deletion.html" class="inline-flex items-center gap-2 text-indigo-600 font-bold hover:underline">
+                    Access Data Deletion Portal <span>→</span>
+                </a>
             </section>
 
             <section class="policy-section">
-                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 4. User Rights</h2>
-                <p class="text-slate-600 text-sm mb-6">You have the right to request a full export of your data or permanent deletion of your account.</p>
-                <a href="deletion.html" class="text-blue-600 font-bold hover:underline">Manage Account Deletion →</a>
+                <h2 class="text-xl font-bold text-slate-900 mb-4"><span class="accent-dot"></span> 6. Contact Us</h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    If you have any questions or suggestions about our Privacy Policy in the <strong>Nexus Workspace</strong>, contact us at:
+                </p>
+                <p class="mt-4 font-extrabold text-slate-900 bg-slate-100 inline-block px-4 py-2 rounded-lg">kiitnexus.in@gmail.com</p>
             </section>
 
-            <div class="mt-12 text-center border-t border-slate-100 pt-8">
-                <a href="index.html" class="text-slate-500 font-semibold mb-4 block">← Return to Hub</a>
-                <p class="text-[10px] text-slate-400 uppercase tracking-widest font-bold">NEXUS Ecosystem © 2026</p>
+            <div class="mt-12 text-center border-t border-slate-100 pt-10">
+                <a href="index.html" class="text-slate-400 font-semibold tracking-widest text-xs uppercase">← Back to Hub</a>
+                <p class="mt-8 text-[10px] text-slate-400 uppercase tracking-widest font-bold">Nexus Workspace © 2026</p>
             </div>
+
         </main>
     </div>
+
 </body>
 </html>
